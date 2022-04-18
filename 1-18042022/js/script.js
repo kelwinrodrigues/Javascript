@@ -1,28 +1,77 @@
 // Janela de alerta criada em javascript
-// alert("Olá. Seja bem vinde");
+function bemvindo() {
+  alert("Olá. Seja bem vindo");
+}
 
 // Vamos solicitar ao usuário que entre com o seu nome
 // Utilzarems o prompt associado à uma variável
-/*var nome = "";
-nome= prompt("Digite seu nome");
-alert(nome.toUpperCase()); //nome em letras maiusculas
-*/
+function nome() {
+  var nome = "";
+  nome = prompt("Digite seu nome");
+  alert(nome.toUpperCase()); //nome em letras maiusculas
+}
 
-// Calcular as 5 operações aritmeticas
-var numero1 = prompt("Digite um número");
-var numero2 = prompt("Digite outro número");
+function operacoes() {
+  // Calcular as 5 operações aritmeticas
+  var numero1 = prompt("Digite um número");
+  var numero2 = prompt("Digite outro número");
 
-var soma = parseInt(numero1) + parseInt(numero2);
-var subtrair = numero1 - numero2;
-var multiplicar  = numero1 * numero2;
-var dividir = numero1 / numero2;
-var resto = numero1 % numero2;
+  var soma = parseInt(numero1) + parseInt(numero2);
+  var subtrair = numero1 - numero2;
+  var multiplicar = numero1 * numero2;
+  var dividir = numero1 / numero2;
+  var resto = numero1 % numero2;
 
-console.log(
-    "Os resultados são: \n\n"+
-    "soma: "+soma+
-    "\nsubtração: "+subtrair+
-    "\nmultiplicação: "+multiplicar+
-    "\ndivisão: "+dividir+
-    "\nresto: "+resto
-);
+  document.getElementsByTagName("button")[0].innerHTML =
+    "Os resultados são: <br><br>" +
+    "soma: " +
+    soma +
+    "<br>subtração: " +
+    subtrair +
+    "<br>multiplicação: " +
+    multiplicar +
+    "<br>divisão: " +
+    dividir +
+    "<br>resto: " +
+    resto;
+}
+
+function operacoesComDiv() {
+  // Calcular as 5 operações aritmeticas
+  var numero1 = prompt("Digite um número");
+  var numero2 = prompt("Digite outro número");
+
+  var soma = parseInt(numero1) + parseInt(numero2);
+  var subtrair = numero1 - numero2;
+  var multiplicar = numero1 * numero2;
+  var dividir = numero1 / numero2;
+  var resto = numero1 % numero2;
+
+  for (var i = 0; i <= 2; i++) {
+    document.getElementsByTagName("div")[i].innerHTML =
+      "Os resultados são: <br><br>" +
+      "soma: " +
+      soma +
+      "<br>subtração: " +
+      subtrair +
+      "<br>multiplicação: " +
+      multiplicar +
+      "<br>divisão: " +
+      dividir +
+      "<br>resto: " +
+      resto;
+    document.getElementsByTagName("div")[i].style.padding = "30px";
+    document.getElementsByTagName("div")[i].style.backgroundColor =
+      "rgb(" + 150 * i + ",200,100)";
+    document.getElementsByTagName("div")[i].style.margin = "20px";
+  }
+}
+
+function tamanhoDiv() {
+  document.getElementsByTagName("div")[0].style.width = "50%";
+  document.getElementsByTagName("div")[0].style.transitionDuration = "0.5s";
+}
+
+function tamanhoNormalDiv() {
+  document.getElementsByTagName("div")[0].style.width = "100%";
+}
