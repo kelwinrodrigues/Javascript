@@ -2,19 +2,18 @@
 function bemvindo() {
   alert("Olá. Seja bem vindo");
 }
-
 // Vamos solicitar ao usuário que entre com o seu nome
-// Utilzarems o prompt associado à uma variável
+// utilizaremos o prompt associado a uma variável
 function nome() {
   var nome = "";
-  nome = prompt("Digite seu nome");
+  nome = prompt("Digite o seu nome");
   alert(nome.toUpperCase()); //nome em letras maiusculas
 }
 
 function operacoes() {
-  // Calcular as 5 operações aritmeticas
+  //Calcular as 5 operações aritmeticas
   var numero1 = prompt("Digite um número");
-  var numero2 = prompt("Digite outro número");
+  var numero2 = prompt("Digite outro numero");
 
   var soma = parseInt(numero1) + parseInt(numero2);
   var subtrair = numero1 - numero2;
@@ -37,9 +36,9 @@ function operacoes() {
 }
 
 function operacoesComDiv() {
-  // Calcular as 5 operações aritmeticas
+  //Calcular as 5 operações aritmeticas
   var numero1 = prompt("Digite um número");
-  var numero2 = prompt("Digite outro número");
+  var numero2 = prompt("Digite outro numero");
 
   var soma = parseInt(numero1) + parseInt(numero2);
   var subtrair = numero1 - numero2;
@@ -62,16 +61,15 @@ function operacoesComDiv() {
       resto;
     document.getElementsByTagName("div")[i].style.padding = "30px";
     document.getElementsByTagName("div")[i].style.backgroundColor =
-      "rgb(" + 150 * i + ",200,100)";
-    document.getElementsByTagName("div")[i].style.margin = "20px";
+      "rgb(" + 100 * i + ",200,100)";
+    document.getElementsByTagName("div")[i].style.margin = "30px";
   }
 }
 
 function tamanhoDiv() {
   document.getElementsByTagName("div")[0].style.width = "50%";
-  document.getElementsByTagName("div")[0].style.transitionDuration = "0.5s";
+  document.getElementsByTagName("div")[0].style.transition = "ease 0.5s";
 }
-
 function tamanhoNormalDiv() {
   document.getElementsByTagName("div")[0].style.width = "100%";
 }
