@@ -2,6 +2,8 @@
 
 ## Trabalhando com a estrutura básica do Javascript
 
+!["Logo HTML CSS Javascript"](https://preloadweb.files.wordpress.com/2016/03/code-chillout.png?w=1000)
+
 ---
 
 ### Sumário
