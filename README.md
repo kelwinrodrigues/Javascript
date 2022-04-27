@@ -35,4 +35,4 @@ Outro exemplo de aplicação do Javascript
 
 #### Cálculo do CPF em Javascript
 
-!["Código do cálculo do cpf"](img/cpf.png)
+!["Código do cálculo do cpf"]("img/cpf.png")
