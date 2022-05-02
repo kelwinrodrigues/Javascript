@@ -49,15 +49,15 @@
 }
 
 h2 {
-  font-family: "Times new romam";
-  font-size: 15pt;
+  font-family: "Verdana";
+  font-size: 12pt;
   margin: 10px;
 }
 
 .data {
   text-align: left;
   margin-left: 12px;
-  font-family: "Times new romam";
+  font-family: "Lucida sans";
   font-size: 9pt;
 }
 
