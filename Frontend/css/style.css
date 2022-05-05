@@ -1,0 +1,99 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+
+header {
+  padding: 100px;
+  text-align: center;
+  background-color: rgb(53, 10, 94);
+  color: white;
+  font-family: "times new roman";
+  font-size: 20pt;
+}
+
+#cadastro a {
+  font-family: "times new roman";
+  font-size: 15pt;
+  text-decoration: none;
+  color: black;
+  margin: 10px;
+  transition: ease 1s;
+}
+
+#cadastro a:hover {
+  color: red;
+  padding-left: 10;
+}
+
+#cadastro {
+  padding: 10px;
+}
+
+form {
+  padding: 10px;
+  width: 40%;
+  margin: auto;
+  text-align: center;
+  display: none;
+  opacity: 1.5;
+}
+
+input {
+  width: 100%;
+  padding: 10px;
+  display: block;
+  margin: 5px;
+}
+
+button {
+  padding: 10px;
+  border: 0px;
+  background-color: rgb(53, 10, 94);
+  color: black;
+  cursor: pointer;
+}
+
+/* main {
+  background-color: rgba(72, 4, 136, 0.897);
+} */
+
+#produtos {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  width: 80%;
+  margin: auto;
+  padding: 20px;
+  box-shadow: 0px 0px 5px 5px #eee;
+  justify-content: center;
+}
+
+#produtos div {
+  width: 30%;
+  margin: 5px;
+  text-align: center;
+  border: 1px solid #eee;
+}
+
+#produtos div img {
+  width: 100%;
+  height: 200px;
+}
+
+h2{
+  font-family: "times New Roman";
+  font-size: 18pt;
+}
+
+h4{
+    font-family: "times New Roman"
+    font: size 10pt;
+    font-weight:lighter;
+}
+
+h5{
+    color: darkred;
+    font-family: "times New Roman";
+}
